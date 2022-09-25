@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Căn giữa</title>
+    <style>
+        html{
+            height: 2000px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+                            /* Cách 1 */
+        /*     Sử dụng line-height để tăng chiều cao của cả element */
+        /* Chú ý chiều cao của line-height phải bằng box thì content sẽ đc đẩy vào giữa */
+        .box1{
+            background-color: orange;
+            width: 100%;
+            height: 150px;
+        }
+        div.box1 h1{
+            text-align: center;
+            line-height: 150px;
+        }
+                            /* Cách 2 */
+        /* Sử dụng display flex cho thẻ cha để hết hợp với margin: auto cho thẻ con*/
+        .box2{
+            margin-top: 20px;
+            background-color: blue;
+            width: 100%;
+            height: 150px;
+            display: flex;
+        }
+        div.box2 h1{
+            margin: auto;
+        }
+
+                            /* Cách 3 */
+        /* Sử dụng display flex,align-items và justify-content cho thẻ cha */
+        .box3{
+            margin-top: 20px;
+            background-color: peachpuff;
+            width: 100%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+                            /* Cách 4 */
+        /* Sử dụng display position và transform */
+        .box4{
+            margin-top: 20px;
+            background-color: gold;
+            width: 100%;
+            height: 150px;
+            position: relative;
+        }
+        div.box4 h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>Content</h1>
+    </div>
+    <div class="box2">
+        <h1>Content2</h1>
+    </div>
+    <div class="box3">
+        <h1>Content3</h1>
+    </div>
+    <div class="box4">
+        <h1>Content3</h1>
+    </div>
+</body>
+</html>

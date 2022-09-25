@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Bar</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .heading-bar{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(78, 79, 89);
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .heading-name{
+            margin-left: 10px;
+            font-size: 3.2rem;
+            color: #fff;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .ver-bar{
+            margin-top: 20px;
+            font-size: 3.2rem;
+            margin-left: 20px;
+        }
+        ul{
+            padding: 10px;
+            list-style-type: none;
+        }
+        li{
+           background-color: aquamarine;
+           width: 200px;
+           border:2px solid green;
+           border-bottom: none;
+           padding: 10px;
+        }
+        li:last-child{
+            border-bottom: 2px solid green;
+        }
+        li:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading-bar">
+        <div class="heading-name">My page</div>
+    </div>
+    <div class="ver-bar">
+        <ul>
+            <li>Home</li>
+            <li>About me</li>
+            <li>Favorite</li>
+            <li>Something</li>
+        </ul>
+    </div>
+</body>
+</html>

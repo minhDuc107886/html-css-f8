@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Bar </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            height: 1000px;
+        }
+        .horizontal-bar{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(78, 79, 89);
+            position: fixed;
+            top: 0;
+        }
+        .horizontal-bar .box-bar{
+            color: azure;
+            width: 60%;
+            position: relative;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .box-content{
+            box-sizing: border-box;
+            float: left;
+            padding: 16px;
+            border-left: 2px solid #fff;
+            background-color: rgba(78, 79, 89,0.3);
+            font-family: sans-serif ;
+        }
+        .box-content:hover{
+            background-color: rgb(114, 114, 117);
+           
+        }
+        .box-content a{
+            color: rgba(80, 234, 245, 0.637);
+            text-decoration: none;
+        }
+        .box-content a:hover{
+            color: rgba(18, 66, 224, 0.815);
+        }
+    </style>
+</head>
+<body>
+    <div class="horizontal-bar">
+        <div class="box-bar">
+            <div class="box-content">
+                <a href="###"> About me</a>  
+            </div>
+            <div class="box-content">
+                <a href="###"> My favorite</a>
+            </div>
+            <div class="box-content">
+                <a href="###"> Something</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

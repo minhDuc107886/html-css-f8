@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../reactJs"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html_css_f8"
+	}
+}
